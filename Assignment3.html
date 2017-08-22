@@ -1,0 +1,15 @@
+
+   
+ <div  ng-controller = "Assignment3Controller">
+<input type="text" name="search" ng-model="search"></input>
+<table>
+    <ul>
+  <li ng-repeat = "emp in employee | filter: search">
+ 
+    Id:{{emp.Id}}
+    Name :{{emp.name}}
+    Technology : {{emp.technology}} 
+
+  </li>
+    </ul>
+ </div>
